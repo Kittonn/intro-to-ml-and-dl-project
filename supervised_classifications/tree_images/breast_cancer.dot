@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="N Stage Encoded <= 0.5\ngini = 0.5\nsamples = 4024\nvalue = [1991.0, 2033.0]\nclass = 1", fillcolor="#fbfdfe"] ;
+1 [label="Age <= 40.5\ngini = 0.498\nsamples = 2732\nvalue = [1283.0, 1449.0]\nclass = 1", fillcolor="#e8f4fc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Tumor Size <= 21.5\ngini = 0.494\nsamples = 197\nvalue = [109, 88]\nclass = 0", fillcolor="#fae7d9"] ;
+1 -> 2 ;
+3 [label="gini = 0.493\nsamples = 86\nvalue = [38, 48]\nclass = 1", fillcolor="#d6ebfa"] ;
+2 -> 3 ;
+4 [label="gini = 0.461\nsamples = 111\nvalue = [71, 40]\nclass = 0", fillcolor="#f4c8a9"] ;
+2 -> 4 ;
+5 [label="Age <= 47.5\ngini = 0.497\nsamples = 2535\nvalue = [1174, 1361]\nclass = 1", fillcolor="#e4f2fb"] ;
+1 -> 5 ;
+6 [label="gini = 0.481\nsamples = 542\nvalue = [218, 324]\nclass = 1", fillcolor="#bedff6"] ;
+5 -> 6 ;
+7 [label="gini = 0.499\nsamples = 1993\nvalue = [956, 1037]\nclass = 1", fillcolor="#f0f7fd"] ;
+5 -> 7 ;
+8 [label="Estrogen Status Encoded <= 0.5\ngini = 0.495\nsamples = 1292\nvalue = [708, 584]\nclass = 0", fillcolor="#fae9dc"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Tumor Size <= 58.0\ngini = 0.411\nsamples = 128\nvalue = [91, 37]\nclass = 0", fillcolor="#f0b48a"] ;
+8 -> 9 ;
+10 [label="gini = 0.459\nsamples = 98\nvalue = [63.0, 35.0]\nclass = 0", fillcolor="#f3c7a7"] ;
+9 -> 10 ;
+11 [label="gini = 0.124\nsamples = 30\nvalue = [28, 2]\nclass = 0", fillcolor="#e78a47"] ;
+9 -> 11 ;
+12 [label="Node Positive Ratio <= 0.58\ngini = 0.498\nsamples = 1164\nvalue = [617, 547]\nclass = 0", fillcolor="#fcf1e9"] ;
+8 -> 12 ;
+13 [label="gini = 0.5\nsamples = 676\nvalue = [331, 345]\nclass = 1", fillcolor="#f7fbfe"] ;
+12 -> 13 ;
+14 [label="gini = 0.485\nsamples = 488\nvalue = [286, 202]\nclass = 0", fillcolor="#f7dac5"] ;
+12 -> 14 ;
+}
