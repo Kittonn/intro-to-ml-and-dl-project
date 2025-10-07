@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Survival Months <= 48.5\ngini = 0.5\nsamples = 985\nvalue = [487.0, 498.0]\nclass = 1", fillcolor="#fbfdfe"] ;
+1 [label="Race_Other <= 0.5\ngini = 0.131\nsamples = 313\nvalue = [22, 291]\nclass = 1", fillcolor="#48a4e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="N Stage Encoded <= 0.5\ngini = 0.103\nsamples = 293\nvalue = [16, 277]\nclass = 1", fillcolor="#44a3e7"] ;
+1 -> 2 ;
+3 [label="gini = 0.199\nsamples = 125\nvalue = [14, 111]\nclass = 1", fillcolor="#52a9e8"] ;
+2 -> 3 ;
+4 [label="gini = 0.024\nsamples = 168\nvalue = [2, 166]\nclass = 1", fillcolor="#3b9ee5"] ;
+2 -> 4 ;
+5 [label="differentiate <= 1.5\ngini = 0.42\nsamples = 20\nvalue = [6, 14]\nclass = 1", fillcolor="#8ec7f0"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = 0", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.291\nsamples = 17\nvalue = [3, 14]\nclass = 1", fillcolor="#63b2eb"] ;
+5 -> 7 ;
+8 [label="Reginol Node Positive <= 4.5\ngini = 0.426\nsamples = 672\nvalue = [465, 207]\nclass = 0", fillcolor="#f1b991"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Survival Months <= 61.5\ngini = 0.358\nsamples = 476\nvalue = [365, 111]\nclass = 0", fillcolor="#eda775"] ;
+8 -> 9 ;
+10 [label="gini = 0.474\nsamples = 122\nvalue = [75, 47]\nclass = 0", fillcolor="#f5d0b5"] ;
+9 -> 10 ;
+11 [label="gini = 0.296\nsamples = 354\nvalue = [290, 64]\nclass = 0", fillcolor="#eb9d65"] ;
+9 -> 11 ;
+12 [label="Survival Months <= 65.5\ngini = 0.5\nsamples = 196\nvalue = [100, 96]\nclass = 0", fillcolor="#fefaf7"] ;
+8 -> 12 ;
+13 [label="gini = 0.441\nsamples = 73\nvalue = [24, 49]\nclass = 1", fillcolor="#9acdf2"] ;
+12 -> 13 ;
+14 [label="gini = 0.472\nsamples = 123\nvalue = [76, 47]\nclass = 0", fillcolor="#f5cfb3"] ;
+12 -> 14 ;
+}
