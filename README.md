@@ -7,6 +7,13 @@ The tree for Decision Tree can be shown using this package.
 brew install graphviz
 ```
 
+## preprocessing
+
+- df_balanced_classification (downsampled, TMN, no non medical: race, marital status)
+- df_unbalanced_classification (TMN, no non medical: race, marital status)
+- test_df_unbalanced_classification (downsampled, onehot race, marital status, TMN)
+- Label_Encoded_Breast_Cancer (oversampled, all features, all label encoded)
+
 ## classification cheatsheet
 
 Can you make like a cheatsheet as to which of these algorithm to choose based on what?
