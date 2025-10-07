@@ -1,0 +1,4 @@
+.venv
+
+# arbitrary temp files
+_temp
